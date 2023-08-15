@@ -136,7 +136,7 @@ class PredictionForm(forms.Form):
             ('Edwards', 'Edwards'),
             ('Gilbert', 'Gilbert'),
             ('IDOTRR', 'Iowa DOT and Rail Road'),
-            ('Landmrk' 'Landmark'),
+            ('Landmrk', 'Landmark'),
             ('MeadowV', 'Meadow Village'),
             ('Mitchel', 'Mitchell'),
             ('Names', 'North Ames'),
