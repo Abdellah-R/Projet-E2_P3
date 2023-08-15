@@ -8,7 +8,7 @@ def test_good_prediction():
     good_input = {
         'Year_Built': '1990',
         'Total_Bsmt_SF': '1000',
-        '1st_Flr_SF': '1200',
+        'First_Flr_SF': '1200',
         'Gr_Liv_Area': '1800',
         'Garage_Area': '500',
         'Overall_Qual': '8',
@@ -19,7 +19,7 @@ def test_good_prediction():
     }
 
     prediction = make_prediction(good_input)
-    assert prediction == 220863
+    assert prediction == 226791
 
 
 @pytest.mark.django_db
@@ -27,7 +27,7 @@ def test_wrong_prediction():
     wrong_input = {
         'Year_Built': '1990',
         'Total_Bsmt_SF': '1000',
-        '1st_Flr_SF': '1200',
+        'First_Flr_SF': '1200',
         'Gr_Liv_Area': '1800',
         'Garage_Area': '500',
         'Overall_Qual': '8',
@@ -54,7 +54,7 @@ def test_predict_view_post_method_good_input(client):
     data = {
         'Year_Built': '1990',
         'Total_Bsmt_SF': '1000',
-        '1st_Flr_SF': '1200',
+        'First_Flr_SF': '1200',
         'Gr_Liv_Area': '1800',
         'Garage_Area': '500',
         'Overall_Qual': '8',
@@ -65,7 +65,7 @@ def test_predict_view_post_method_good_input(client):
     }
     response = client.post(url, data)
     assert response.status_code == 200
-    assert int(response.context['data']) == 220863
+    assert int(response.context['data']) == 226791
 
 
 @pytest.mark.django_db
@@ -74,7 +74,7 @@ def test_predict_view_post_method_wrong_input(client):
     data = {
         'Year_Built': '1990',
         'Total_Bsmt_SF': '1000',
-        '1st_Flr_SF': '1200',
+        'First_Flr_SF': '1200',
         'Gr_Liv_Area': '1800',
         'Garage_Area': '500',
         'Overall_Qual': '8',
@@ -85,7 +85,7 @@ def test_predict_view_post_method_wrong_input(client):
     }
     response = client.post(url, data)
     assert response.status_code == 200
-    assert response.content == b"The Input is not Correct"
+    assert response.content == b"Invalid input"
 
 
 @pytest.mark.django_db

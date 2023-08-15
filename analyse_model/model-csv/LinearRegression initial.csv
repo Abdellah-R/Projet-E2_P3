@@ -1,0 +1,2 @@
+model,R2,MAE_train,MAE_test
+LinearRegression initial,0.8464200968709472,20289.33639741511,21324.92012401977
