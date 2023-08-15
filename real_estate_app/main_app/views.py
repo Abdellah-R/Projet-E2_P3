@@ -38,10 +38,10 @@ def predict(request):
                 
                 return render(request, 'index.html', context)
             else:
-                return HttpResponse("Invalid input", status=400)
+                return HttpResponse("Invalid input")
         
         else:
-            return HttpResponse("Invalid input", status=400)
+            return HttpResponse("Invalid input")
         
     else:
         return HttpResponse("Method Not Allowed")
