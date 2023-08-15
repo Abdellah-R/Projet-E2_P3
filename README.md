@@ -1,31 +1,34 @@
-# Real Estate Price Prediction Web App
+# Application web pour prédire le prix d'une maison
 
-![Real Estate Price Prediction](https://github.com/charles-42/E2_P3/blob/develop/data/screenshot.png)
+## [![Docker Build](https://img.shields.io/docker/cloud/build/votre-utilisateur/votre-projet)](https://hub.docker.com/r/votre-utilisateur/votre-projet)
+[![Django Version](https://img.shields.io/badge/django-4.2-green.svg)](https://docs.djangoproject.com/en/4.2/)
 
-## Project Description
+## Description
 
-This Django web app aims at predicting real estate prices based on house features. It provides a very basic user interface for users to input house features and get an estimated price for the property. The prediction model is trained on a dataset of real estate sales, incorporating various factors like location, area, number of rooms, etc., to make accurate predictions.
+Cette application Web Django vise à prédire les prix de l'immobilier en fonction des caractéristiques de la maison. Il fournit une interface utilisateur conviviale et permet de saisir les caractéristiques de la maison et d'obtenir une estimation du prix de la propriété. Le modèle de prédiction est formé sur un ensemble de données de ventes immobilières, incorporant divers facteurs tels que l'emplacement, la superficie, le nombre de pièces, etc., pour faire des prédictions précises.
 
-## Usage
+![](data/screenshot.png)
 
-To run the web app locally, follow these steps:
+## Guide
 
-1. Change into the project directory:
+Pour lancer l'application web localement, suivez ces étapes:
+
+1. Placez-vous dans le premier répertoire real_estate_app à partir de la racine:
 ```bash
 cd real_estate_app
 ```
 
-2. Build the Docker image for the Django app:
+2. Utilisez cette commande pour construire l'image docker:
 
 ```bash
 docker build -t django-app .
 ```
 
-3. Run the Docker container with port mapping and volume mounting:
+3. Exécuter le conteneur en mappant les ports et en montant un volume:
 
 ```bash
 docker run -dp 8000:8000 -v "$PWD":/app django-app
 ```
 
-The app will be accessible at http://localhost:8000/ in your web browser. You can now start using the app to predict real estate prices based on different house features.
+L'application sera accessible à l'adresse http://0.0.0.0:8000/ dans votre navigateur.
 
