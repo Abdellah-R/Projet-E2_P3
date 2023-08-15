@@ -1,7 +1,10 @@
 # Application web pour prédire le prix d'une maison
 
-## [![Docker Build](https://img.shields.io/docker/cloud/build/votre-utilisateur/votre-projet)](https://hub.docker.com/r/votre-utilisateur/votre-projet)
+## Badges
+
+![Dockerfile](https://img.shields.io/badge/Dockerfile-Exists-brightgreen)
 [![Django Version](https://img.shields.io/badge/django-4.2-green.svg)](https://docs.djangoproject.com/en/4.2/)
+
 
 ## Description
 
