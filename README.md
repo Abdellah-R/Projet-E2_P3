@@ -8,8 +8,8 @@
 
 ## Description
 
-Cette application Web Django vise à prédire les prix de l'immobilier en fonction des caractéristiques de la maison. 
-Il fournit une interface utilisateur conviviale et permet de saisir les caractéristiques de la maison et d'obtenir une estimation du prix de la propriété. 
+Cette application Web Django vise à prédire les prix de l'immobilier en fonction des caractéristiques de la maison. <br>
+Il fournit une interface utilisateur conviviale et permet de saisir les caractéristiques de la maison et d'obtenir une estimation du prix de la propriété. <br>
 Le modèle de prédiction est formé sur un ensemble de données de ventes immobilières, incorporant divers facteurs tels que l'emplacement, la superficie, le nombre de pièces, etc., pour faire des prédictions précises.
 
 ![](data/screenshot.png)
